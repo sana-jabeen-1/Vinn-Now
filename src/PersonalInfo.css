@@ -1,0 +1,244 @@
+/* Container Styles */
+.personal-info-section {
+  background-color: #f4f6f9;
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background: #ffffff; /* Use white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form Header */
+.form-header {
+  margin-bottom: 40px;
+}
+
+.sub-title {
+  color: #888; /* Lighter color for subtitle */
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.main-title {
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+  padding: 0px 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single-column layout */
+  gap: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-field {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.input-field:focus {
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.3); /* Subtle focus effect */
+}
+
+.input-disabled {
+  background: #f0f0f0;
+  color: #888;
+}
+
+/* Phone Number Input */
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-group label {
+  margin-bottom: 5px;
+}
+
+.input-small {
+  height: 50px;
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.phone-input {
+  flex: 1;
+}
+
+.flag-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+/* Terms and Conditions */
+.terms-label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.terms-link {
+  color: #0073e6;
+  text-decoration: underline;
+}
+
+.terms-link:hover {
+  color: #005bb5;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button,
+.submit-button {
+  width: 45%;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-button {
+  background: #f7f7f7;
+  color: #444;
+  border: 1px solid #ddd;
+}
+
+.back-button:hover {
+  background: #ddd;
+}
+
+.submit-button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .back-button,
+  .submit-button {
+    width: 100%;
+  }
+}
+
+/* VIN Details Section */
+.vin-details-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vin-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.vin-details {
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h4 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.field {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+  min-width: 150px;
+}
+
+span {
+  color: #2a3eb1;
+  text-align: left;
+}
+
+/* Responsive Adjustments for VIN Details */
+@media (max-width: 768px) {
+  .vin-validator {
+    width: 95%;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  span {
+    margin-top: 5px;
+  }
+}

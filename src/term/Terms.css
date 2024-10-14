@@ -1,0 +1,99 @@
+/* Container Styling */
+.terms-container {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .terms-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  .terms-heading {
+    font-size: 44px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    text-align: left;
+  }
+  
+  .terms-subheading {
+    text-align: left;
+    font-size: 32px;
+    font-weight: medium;
+    color: #222;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+  }
+  
+  /* Paragraph Styles */
+  .terms-paragraph {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .terms-content {
+      max-width: 90%;
+    }
+  
+    .terms-heading {
+      font-size: 38px;
+    }
+  
+    .terms-subheading {
+      font-size: 28px;
+    }
+  
+    .terms-paragraph {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .terms-content {
+      max-width: 100%;
+    }
+  
+    .terms-heading {
+      font-size: 30px;
+    }
+  
+    .terms-subheading {
+      font-size: 24px;
+    }
+  
+    .terms-paragraph {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terms-heading {
+      font-size: 26px;
+    }
+  
+    .terms-subheading {
+      font-size: 20px;
+    }
+  
+    .terms-paragraph {
+      font-size: 14px;
+    }
+  }
+  

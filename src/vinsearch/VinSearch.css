@@ -1,0 +1,199 @@
+/* Container Styling */
+.vin-search-container {
+  width: 100%;
+  background-color: #e3f7ff; /* Light blue background */
+  padding: 50px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Content Container */
+.vin-search-content {
+  background-color: #e3f7ff;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Sticky Search Bar */
+.vin-form-container {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 70px; /* Adjust the value to keep it aligned with header */
+  z-index: 1000; /* Ensure it stays on top */
+  background-color: #e3f7ff; /* Add background color to avoid transparency */
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+/* Search Bar Wrapper */
+.vin-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  transition: border 0.3s ease;
+  width: 800px;
+  margin: 0 auto; /* Center the search bar */
+}
+
+.vin-input-wrapper:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* Input Field */
+.vin-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+  border-radius: 25px;
+  margin-left: 8px;
+}
+
+/* Submit Button */
+.vin-submit-btn {
+  padding: 14px 30px;
+  border: none;
+  outline: none;
+  background-color: #1e90ff; /* Theme color */
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vin-submit-btn:hover {
+  background-color: #0073e6; /* Darker shade */
+}
+
+/* "How It Works" Section Styling */
+.how-it-works .text-center h3 {
+  color: #1e90ff; /* Theme color */
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.how-it-works .text-center h2 {
+  color: #222;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.3em;
+}
+
+.steps-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step-item {
+  width: 300px; /* Fixed width for each step */
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step-item:hover {
+  transform: translateY(-10px); /* Slightly elevate the card on hover */
+}
+
+.step-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  background-color: #1e90ff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-title {
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.step-description {
+  font-size: 16px;
+  color: #666;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .step-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* VIN History Report Section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between each card */
+  margin: 20px; /* Margin around the container */
+}
+
+/* Individual Cards */
+.card {
+  flex: 1 1 20%;
+  margin: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 45%; /* Two cards per row */
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Full-width cards for mobile */
+  }
+}
