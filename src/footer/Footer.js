@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css'; // Import CSS for styling the footer
+import './Footer.css'; 
 import logo from '../Vin-Me-Now-LOGO-F.png';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <img
-            src={logo} /* Replace with actual logo path */
+            src={logo} 
             alt="Auto Audit Pro Logo"
             className="footer-logo"
           />

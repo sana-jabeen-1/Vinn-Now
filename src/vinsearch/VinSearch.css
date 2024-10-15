@@ -60,7 +60,7 @@
   padding: 14px 30px;
   border: none;
   outline: none;
-  background-color: #1e90ff; /* Theme color */
+  background-color: #467cbf; /* Theme color */
   color: #fff;
   border-radius: 25px;
   font-size: 16px;
@@ -69,12 +69,12 @@
 }
 
 .vin-submit-btn:hover {
-  background-color: #0073e6; /* Darker shade */
+  background-color: #f8b024; /* Darker shade */
 }
 
 /* "How It Works" Section Styling */
 .how-it-works .text-center h3 {
-  color: #1e90ff; /* Theme color */
+  color: #467cbf; /* Theme color */
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -112,7 +112,7 @@
   height: 100px;
   margin: 0 auto 20px auto;
   border-radius: 50%;
-  background-color: #1e90ff;
+  background-color: #467cbf;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
