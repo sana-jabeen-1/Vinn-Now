@@ -5,6 +5,19 @@ import '../Header.css';
 import FaqComp from '../FaqComp';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../Vin-Me-Now-LOGO-F.png';
+import title from '../title-icn.svg';
+import del from '../delet-icon.svg';
+import brand from '../brand-check.svg';
+import odometr from '../odometer.svg';
+import value from '../vh-value.svg';
+import inspaction from '../inspection.svg';
+import safty from '../safty-recall.svg';
+import openlens from '../openlens.svg';
+import active from '../active-theft.svg';
+import registration from '../title-icn.svg';
+import otherinfo from '../other-info.svg'
+
 
 
 const VinSearch = () => {
@@ -141,62 +154,65 @@ const VinSearch = () => {
 
       <section class="card-container">
     <div class="card">
-        <img src="" alt="Title History Icon"/>
+        <img src={title} alt="Title History Icon"/>
         <h3>Title History</h3>
         <p>Current and historical state DMV title data from the National Motor Vehicle Title Information System (NMVTIS).</p>
     </div>
     <div class="card">
-        <img src="path/to/icon2.png" alt="Junk / Salvage Info Icon"/>
+    <img
+              src={del} 
+              alt="Auto Audit Pro"
+            />
         <h3>Junk / Salvage Info</h3>
         <p>Current and historical information from junk yards, dismantlers, salvage auctions, and insurance companies.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon3.png" alt="Title Brand Check Icon"/>
+        <img src={brand} alt="Title Brand Check Icon"/>
         <h3>Title Brand Check</h3>
         <p>Over 70 current and historical title brands, including negative brands such as Junk, Salvage, Rebuilt, and more.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon4.png" alt="Odometer History Icon"/>
+        <img src={odometr} alt="Odometer History Icon"/>
         <h3>Odometer History</h3>
         <p>Current and historical odometer readings from DMV titles and other sources to track mileage over time.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon5.png" alt="Vehicle Values Icon"/>
+        <img src={value} alt="Vehicle Values Icon"/>
         <h3>Vehicle Values</h3>
         <p>Vehicle valuation information reported from leading sources, providing trade-in and retail values.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Warranty Info Icon"/>
+        <img src={inspaction} alt="Warranty Info Icon"/>
         <h3>Warranty Info</h3>
         <p>Factory warranty information for drive train and safety systems as reported by the vehicle’s manufacturer.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Inspection Information"/>
+        <img src={inspaction} alt="Inspection Information"/>
         <h3>Inspection Information</h3>
         <p>Federal highway inspection information provides inspection date, and safety, driver, and hazardous materials violations and more.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Safety Recalls"/>
+        <img src={safty} alt="Safety Recalls"/>
         <h3>Safety Recalls</h3>
         <p>Open and issued NHTSA and manufacturer recalls. Shows recall date and description, risk severity, whether it should be driven, sold and more.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Open Liens"/>
+        <img src={openlens} alt="Open Liens"/>
         <h3>Open Liens</h3>
         <p>An open lien (loan from a bank or finance company that has not been fully paid) the report shows the bank name and date the loan was opened. Data is reported by major automotive lenders.</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Active and Recovered Theft"/>
+        <img src={active} alt="Active and Recovered Theft"/>
         <h3>Active and Recovered Theft</h3>
         <p>Active and recovered theft records show when a vehicle has been reported as stolen, either an active theft (not reported as located by law enforcement) or a recovered theft (located).</p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Registration Information"/>
+        <img src={registration} alt="Registration Information"/>
         <h3>Registration Information</h3>
         <p>This section identifies this vehicle's current registration and any reported prior registration events by date. </p>
     </div>
     <div class="card">
-        <img src="path/to/icon6.png" alt="Other Information"/>
+        <img src={otherinfo} alt="Other Information"/>
         <h3>Other Information</h3>
         <p>Reports also include collision and damage information from limited state and federal sources, NHTSA 5-star crash ratings, and detailed vehicle specification information from VIN decode, vehicles available for sale and much more. </p>
     </div>
