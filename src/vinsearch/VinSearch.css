@@ -22,23 +22,26 @@
   z-index: 1000; /* Ensure it stays on top */
   background-color: #e3f7ff; /* Add background color to avoid transparency */
   padding: 20px 0;
+  padding-right: 30px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
 }
 
 /* Search Bar Wrapper */
+/* Search Bar Wrapper */
 .vin-input-wrapper {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 6px;
+  padding: 10px;
   border-radius: 25px;
   background-color: #ffffff;
   transition: border 0.3s ease;
-  width: 800px;
+  width: 800px; /* Default width for larger screens */
   margin: 0 auto; /* Center the search bar */
 }
 
+/* Hover Effect */
 .vin-input-wrapper:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -70,6 +73,36 @@
 
 .vin-submit-btn:hover {
   background-color: #f8b024; /* Darker shade */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .vin-input-wrapper {
+    width: 90%; /* Adjust width to 90% for mobile devices */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .vin-input {
+    padding: 10px; /* Adjust padding for input */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .vin-submit-btn {
+    padding: 10px 20px; /* Adjust padding for button */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .vin-input-wrapper {
+    width: 100%; /* Full width on very small screens */
+    padding: 6px; /* Further reduce padding */
+  }
+
+  .vin-input {
+    padding: 8px; /* Further adjust padding for input */
+    font-size: 12px; /* Smaller font size */
+  }
 }
 
 /* "How It Works" Section Styling */
@@ -136,7 +169,7 @@
 @media (max-width: 768px) {
   .step-item {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
