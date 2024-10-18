@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS
 import './ContactUs.css'; // Import custom CSS file for styling
+import { ImFacebook2 } from "react-icons/im";
+import { FaInstagram } from "react-icons/fa6";
+import { useLocation } from 'react-router-dom';
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +12,14 @@ const ContactUs = () => {
     email: '',
     message: ''
   });
+
+  let { pathname } = useLocation();
+
+
+  useEffect(() => {
+    window.scroll(0,0);
+  }, [pathname]);
+  
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -51,7 +63,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className='contact-main-container'>
       <h1 className='cont-h'> Contact Us </h1>
       <p className='cont-p'>Any question or remarks? Just write us a message</p>
       
@@ -73,10 +85,10 @@ const ContactUs = () => {
           </ul>
           <div className="social-icons">
             <a href="https://www.facebook.com/autoauditpro">
-              <img src="/_next/static/media/facebook-icon.png" alt="Facebook" className="social-icon" />
+             <ImFacebook2 />
             </a>
             <a href="https://www.instagram.com/autoauditpro/">
-              <img src="/_next/static/media/instagram-icon.png" alt="Instagram" className="social-icon" />
+             <FaInstagram />
             </a>
           </div>
         </div>

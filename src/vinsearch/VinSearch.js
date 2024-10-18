@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './VinSearch.css'; // Import custom CSS file for styling
 import Header from '../Header';
 import '../Header.css';
 import FaqComp from '../FaqComp';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import logo from '../Vin-Me-Now-LOGO-F.png';
 import title from '../title-icn.svg';
 import del from '../delet-icon.svg';
@@ -16,19 +16,25 @@ import safty from '../safty-recall.svg';
 import openlens from '../openlens.svg';
 import active from '../active-theft.svg';
 import registration from '../title-icn.svg';
-import otherinfo from '../other-info.svg'
+import otherinfo from '../other-info.svg';
 
 
 
 const VinSearch = () => {
 
-  const [vin, setVin] = useState(''); // State for VIN input
-  const [message, setMessage] = useState(''); // State for validation message
-  const [loading, setLoading] = useState(false); // State for loading indicator
+  const [vin, setVin] = useState(''); 
+  const [message, setMessage] = useState(''); 
+  const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
+   
+  let { pathname } = useLocation();
 
-  // Transliterate each character to its respective value
+
+  useEffect(() => {
+    window.scroll(0,0);
+  }, [pathname]);
+  
   const transliterate = (c) => {
     return '0123456789.ABCDEFGH..JKLMN.P.R..STUVWXYZ'.indexOf(c) % 10;
   };
@@ -42,29 +48,28 @@ const VinSearch = () => {
     return map[sum % 11];
   };
 
-  // Validate VIN number
   const validateVin = (vin) => {
     if (vin.length !== 17) return false;
     return getCheckDigit(vin) === vin[8];
   };
 
-  // Handle VIN input change
+
   const handleVinChange = (e) => {
     setVin(e.target.value.toUpperCase());
     setMessage('');
   };
 
-  // Handle form submission
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateVin(vin)) {
       setMessage('VIN is valid. Redirecting to details form...');
       setLoading(true);
 
-      // Simulate an API call to validate VIN and then navigate to the PersonalInfo page
+    
       setTimeout(() => {
         setLoading(false);
-        // Navigate to the PersonalInfo page and pass the VIN as a state parameter
+        
         navigate('/personal-info', { state: { vin: vin } });
       }, 1000);
     } else {

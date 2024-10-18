@@ -9,17 +9,17 @@ function App() {
   return (
     <div className="App">
       <>
-      
-     
-      <Router>
-        <Header/>
-      {/* Include the Header component */}
-      <AppRoutes /> {/* Include the separate Routes component */}
-      
-    </Router>
-    
-   
-    </>
+
+
+        <Router>
+          <Header />
+          {/* Include the Header component */}
+          <AppRoutes /> {/* Include the separate Routes component */}
+
+        </Router>
+
+
+      </>
     </div>
   );
 }

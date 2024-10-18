@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutUs.css'; // Import custom CSS file
+import { useLocation } from 'react-router-dom';
 
 const AboutUs = () => {
+
+  let { pathname } = useLocation();
+
+
+  useEffect(() => {
+    window.scroll(0,0);
+  }, [pathname]);
+  
+
   return (
     <div className="about-container">
       <div className="about-content">

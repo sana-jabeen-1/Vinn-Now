@@ -1,5 +1,6 @@
 /* Container Styling */
 .vin-search-container {
+  margin-top: 60px;
   width: 100%;
   background-color: #e3f7ff; /* Light blue background */
   padding: 50px 30px;
@@ -9,10 +10,12 @@
 
 /* Main Content Container */
 .vin-search-content {
+
   background-color: #e3f7ff;
-  max-width: 1200px;
+ display: flex;
+ flex-direction: column;
   width: 100%;
-}
+  }
 
 /* Sticky Search Bar */
 .vin-form-container {
@@ -22,9 +25,13 @@
   z-index: 1000; /* Ensure it stays on top */
   background-color: #e3f7ff; /* Add background color to avoid transparency */
   padding: 20px 0;
-  padding-right: 30px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+  padding-right: 0px;
+  width: 75%;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 /* Search Bar Wrapper */
@@ -34,11 +41,11 @@
   justify-content: space-between;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: #ffffff;
-  transition: border 0.3s ease;
-  width: 800px; /* Default width for larger screens */
+  transition: border 0.3s ease;  
   margin: 0 auto; /* Center the search bar */
+  
 }
 
 /* Hover Effect */
@@ -94,14 +101,38 @@
 }
 
 @media (max-width: 480px) {
+
+  /* Main Content Container */
+.vin-search-content {
+  background-color: #e3f7ff;
+  margin: 25px 0px;
+  margin-left: -30px;
+  position: block;
+}
+
+ /* Submit Button */
+.vin-submit-btn {
+  padding: 9px 12px;
+  border: none;
+  text-wrap: nowrap;
+  outline: none;
+  background-color: #467cbf; /* Theme color */
+  color: #fff;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
   .vin-input-wrapper {
-    width: 100%; /* Full width on very small screens */
-    padding: 6px; /* Further reduce padding */
+    width: 60%; /* Full width on very small screens */
+    padding: .8px 2px; /* Further reduce padding */
   }
 
   .vin-input {
-    padding: 8px; /* Further adjust padding for input */
-    font-size: 12px; /* Smaller font size */
+    padding: 10px 0px;
+   /* Further adjust padding for input */
+    font-size: 10px; /* Smaller font size */
   }
 }
 

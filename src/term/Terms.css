@@ -1,99 +1,90 @@
-/* Container Styling */
-.terms-container {
-    width: 100%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    
-  }
+.term-container{
+  display: flex;
+  margin: 110px 0px;
+}
+
+.terms-content{
+  width: 65%;
+  padding:0px  30px;
+  text-align: left;
+}
+
+.terms-heading {
+  font-size: 30px; 
+  font-weight: bold; 
+  margin-bottom: 16px; 
+}
+
+.terms-subheading {
+  font-size: 24px;
+  font-weight: 500; 
+  margin-top: 20px; 
+  margin-bottom: 8px; 
+}
+
+
+.terms-paragraph {
+  font-size: 19px; 
+  line-height: 1.6; 
+  color: #333; 
+  margin-bottom: 12px; 
+}
+
+
+.form-sec {
+  background-color: #eef8fc;
+  border-radius: 20px; 
+  padding: 30px; 
+  width: 400px; 
+  height: 100%;
+  margin: 20px 20px; 
+  text-align: center; 
+  position: sticky;
+  top:160px;
   
-  .terms-content {
-    max-width: 100%;
-    width: 100%;
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  }
+}
+
+
+.form-sec h1 {
+  font-size: 28px;
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 20px; 
+}
+
+
+.vin-input-wrapper-term {
+  margin-bottom: 20px; 
+   width: 75%;  
+}
+
+.vin-input-term {
+  width: 30px; 
+  height: 12px; 
+  outline: none; 
+  color: #000;
   
-  /* Heading Styles */
-  .terms-heading {
-    font-size: 44px;
-    font-weight: bold;
-    color: #222;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2em;
-    text-align: left;
-  }
-  
-  .terms-subheading {
-    text-align: left;
-    font-size: 32px;
-    font-weight: medium;
-    color: #222;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    line-height: 1.2em;
-  }
-  
-  /* Paragraph Styles */
-  .terms-paragraph {
-    font-size: 20px;
-    color: #666;
-    line-height: 1.6em;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 1024px) {
-    .terms-content {
-      max-width: 90%;
-    }
-  
-    .terms-heading {
-      font-size: 38px;
-    }
-  
-    .terms-subheading {
-      font-size: 28px;
-    }
-  
-    .terms-paragraph {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .terms-content {
-      max-width: 100%;
-    }
-  
-    .terms-heading {
-      font-size: 30px;
-    }
-  
-    .terms-subheading {
-      font-size: 24px;
-    }
-  
-    .terms-paragraph {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .terms-heading {
-      font-size: 26px;
-    }
-  
-    .terms-subheading {
-      font-size: 20px;
-    }
-  
-    .terms-paragraph {
-      font-size: 14px;
-    }
-  }
-  
+}
+
+.vin-submit-btn {
+  border-radius: 5px; 
+  width: 45%; 
+  font-size: 20px; 
+  background-color: #467cbf; 
+  color: #fff;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.vin-submit-btn:hover {
+  background-color:#f8b024; 
+}
+
+
+.small-b {
+  display: block; 
+  margin-top: 12px; 
+  font-size: 14px; 
+  color: #999; 
+}
