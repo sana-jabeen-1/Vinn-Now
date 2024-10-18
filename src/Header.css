@@ -27,7 +27,7 @@
 
 /* Logo Styling */
 .logo img {
-  height: 50px; /* Adjust the logo height */
+  width: 150px; 
 }
 
 /* Navigation Links and Contact Button Container */
@@ -74,7 +74,7 @@
   color:#467cbf ;
 }
 
-.hamburger {
+  .hamburger {
   display: none; /* Hidden by default */
   flex-direction: column;
   cursor: pointer;
@@ -114,9 +114,38 @@
     width: 100%; /* Full width for links */
     text-align: center; /* Center text */
   }
+}
 
-  .contact-button {
-    display: block; /* Ensure it's visible */
-    margin-top: 10px; /* Space from the menu */
+@media (max-width: 480px) {
+  .hamburger {
+    display: flex; 
+    /* Show on mobile */
+  }
+
+  /* Contact Button Styling */
+.contact-button button {
+  padding: 10px 8px;
+  background-color: #467cbf; /* Theme color for the button */
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+  text-wrap: nowrap;
+}
+  .nav-button-container {
+    padding: 10px;
+  
+  }
+/* 
+  .nav-button-container.open {
+   
+  } */
+
+  .nav-item {
+   text-wrap: nowrap;
+   margin-bottom: 6px;
   }
 }

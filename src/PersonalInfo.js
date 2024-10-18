@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import './PersonalInfo.css'; // Import custom CSS
 import axios from 'axios'; // Import axios for API requests
@@ -11,13 +12,14 @@ const PersonalInfo = () => {
   const [error, setError] = useState(null); // State to handle errors
   const [vinDetails, setVinDetails] = useState(null); // State to store VIN details
   const [loading, setLoading] = useState(false); // State to show loading spinner or message
+  const [termsAccepted, setTermsAccepted] = useState(false); // State for terms and conditions checkbox
+  const [showPayPal, setShowPayPal] = useState(false); // State to manage PayPal button visibility
 
   // PayPal client ID (replace with your sandbox client ID)
   const CLIENT_ID = 'ARWnknX-IC4v6slUqzVnaOEpik70jBrYnHHvU2ego4mJjmL9NFgIt099xjCR7KUQoEWHyANWQ4b9seR9';
 
   // Handle successful payment
   const handleApprove = (orderID) => {
-    // Payment is successfully completed
     setPaid(true);
     fetchVinDetails(vinNumber); // Fetch VIN details after payment
     alert(`Payment successful! Order ID: ${orderID}`);
@@ -49,6 +51,20 @@ const PersonalInfo = () => {
       console.error(err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Handle the checkbox change
+  const handleCheckboxChange = () => {
+    setTermsAccepted(!termsAccepted);
+  };
+
+  // Handle Proceed button click
+  const handleProceed = () => {
+    if (termsAccepted) {
+      setShowPayPal(true); // Show the PayPal button if terms are accepted
+    } else {
+      alert("Please check this box to proceed"); // Alert if not checked
     }
   };
 
@@ -111,39 +127,51 @@ const PersonalInfo = () => {
 
               {/* Terms and Conditions */}
               <label className="terms-label">
-                <input type="checkbox" required /> I accept the{' '}
-                <a className="terms-link" href="/terms-and-condition">
+                <input 
+                  type="checkbox" 
+                  required 
+                  checked={termsAccepted} 
+                  onChange={handleCheckboxChange} 
+                /> I accept the{' '}
+                <Link className="terms-link" to="/terms"> 
                   terms and conditions
-                </a>
+                </Link>
                 , including the payment and refund policy.
               </label>
             </div>
 
-            {/* PayPal Integration */}
-            <PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>
-              <div className="paypal-button-container">
-                <PayPalButtons
-                  style={{ layout: 'vertical', color: 'blue', shape: 'pill', label: 'pay' }}
-                  createOrder={(data, actions) => {
-                    return actions.order.create({
-                      purchase_units: [
-                        {
-                          description: 'VIN Report Purchase',
-                          amount: { value: '35.00' },
-                        },
-                      ],
-                    });
-                  }}
-                  onApprove={(data, actions) => {
-                    return actions.order.capture().then(() => handleApprove(data.orderID));
-                  }}
-                  onError={(err) => {
-                    setError(err);
-                    console.error('PayPal Checkout Error:', err);
-                  }}
-                />
-              </div>
-            </PayPalScriptProvider>
+            {/* Proceed Button */}
+            <button type="button" className="proceed-button" onClick={handleProceed}>
+              Proceed
+            </button>
+
+            {/* Show PayPal Integration if terms are accepted */}
+            {showPayPal && (
+              <PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>
+                <div className="paypal-button-container">
+                  <PayPalButtons
+                    style={{ layout: 'vertical', color: 'blue', shape: 'pill', label: 'pay' }}
+                    createOrder={(data, actions) => {
+                      return actions.order.create({
+                        purchase_units: [
+                          {
+                            description: 'VIN Report Purchase',
+                            amount: { value: '35.00' },
+                          },
+                        ],
+                      });
+                    }}
+                    onApprove={(data, actions) => {
+                      return actions.order.capture().then(() => handleApprove(data.orderID));
+                    }}
+                    onError={(err) => {
+                      setError(err);
+                      console.error('PayPal Checkout Error:', err);
+                    }}
+                  />
+                </div>
+              </PayPalScriptProvider>
+            )}
           </form>
         ) : (
           // Display VIN Details After Payment

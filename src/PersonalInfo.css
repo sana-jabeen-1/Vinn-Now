@@ -242,3 +242,28 @@ span {
     margin-top: 5px;
   }
 }
+.proceed-button {
+  background-color: #467cbf; /* Bootstrap primary color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px; /* Space above the button */
+  margin-bottom: 20px;
+}
+
+/* Hover effect */
+.proceed-button:hover {
+  background-color: #f8b024; /* Darker shade of primary color on hover */
+}
+
+/* Disabled button style (optional) */
+.proceed-button:disabled {
+  background-color: #cccccc; /* Grey background for disabled state */
+  color: #666666; /* Darker text color */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+

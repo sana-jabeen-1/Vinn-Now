@@ -16,7 +16,7 @@ const Header = () => {
         {/* Logo Section */}
         <div className="logo">
           <Link to="/">
-            <img src={logo} alt="Auto Audit Pro" />
+            <img src={logo} alt="Vin Me Now logo" />
           </Link>
         </div>
 
