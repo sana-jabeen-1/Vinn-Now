@@ -102,7 +102,7 @@ const VinSearch = () => {
             value={vin}
             onChange={handleVinChange}
           />
-          <button type="submit" className="vin-submit-btn" disabled={loading}>
+          <button type="submit" className="vin-submit-btnn" disabled={loading}>
             {loading ? 'Loading...' : 'Get Report'}
           </button>
         </div>

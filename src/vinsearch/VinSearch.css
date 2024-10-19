@@ -1,6 +1,5 @@
 /* Container Styling */
 .vin-search-container {
-  margin-top: 60px;
   width: 100%;
   background-color: #e3f7ff; /* Light blue background */
   padding: 50px 30px;
@@ -8,14 +7,22 @@
   align-items: center;
 }
 
-/* Main Content Container */
-.vin-search-content {
 
-  background-color: #e3f7ff;
- display: flex;
- flex-direction: column;
+/* Main Content Container */
+.vin-search-container {
   width: 100%;
-  }
+  background-color: #e3f7ff; /* Light blue background */
+  padding: 50px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vin-subtitle{
+  margin-top: 95px;
+  color: #467cbf;
+  font-size: x-large;
+  font-style: bold;
+}
 
 /* Sticky Search Bar */
 .vin-form-container {
@@ -26,7 +33,7 @@
   background-color: #e3f7ff; /* Add background color to avoid transparency */
   padding: 20px 0;
   padding-right: 0px;
-  width: 75%;
+  width: 100%;
   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
   display: flex;
   align-self: center;
@@ -40,15 +47,14 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 15px;
+  padding: 6px;
+  border-radius: 25px;
   background-color: #ffffff;
-  transition: border 0.3s ease;  
+  transition: border 0.3s ease;
+  width: 800px; /* Adjusted width to reduce size */
   margin: 0 auto; /* Center the search bar */
-  
 }
 
-/* Hover Effect */
 .vin-input-wrapper:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -66,7 +72,7 @@
 }
 
 /* Submit Button */
-.vin-submit-btn {
+.vin-submit-btnn {
   padding: 14px 30px;
   border: none;
   outline: none;
@@ -75,13 +81,20 @@
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
+  font-weight: 700;
   transition: background-color 0.3s ease;
 }
 
-.vin-submit-btn:hover {
+.vin-submit-btnn:hover {
   background-color: #f8b024; /* Darker shade */
+  color: #467cbf;
 }
 
+
+.vin-submit-btn:hover {
+  background-color: #f8b024; /* Darker shade */
+  color: #467cbf;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .vin-input-wrapper {
@@ -111,18 +124,7 @@
 }
 
  /* Submit Button */
-.vin-submit-btn {
-  padding: 9px 12px;
-  border: none;
-  text-wrap: nowrap;
-  outline: none;
-  background-color: #467cbf; /* Theme color */
-  color: #fff;
-  border-radius: 15px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+
 
   .vin-input-wrapper {
     width: 60%; /* Full width on very small screens */

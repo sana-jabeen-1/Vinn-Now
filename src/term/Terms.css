@@ -53,33 +53,10 @@
 }
 
 
-.vin-input-wrapper-term {
-  margin-bottom: 20px; 
-   width: 75%;  
-}
 
-.vin-input-term {
-  width: 30px; 
-  height: 12px; 
-  outline: none; 
-  color: #000;
-  
-}
 
-.vin-submit-btn {
-  border-radius: 5px; 
-  width: 45%; 
-  font-size: 20px; 
-  background-color: #467cbf; 
-  color: #fff;
-  border: none; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
-}
 
-.vin-submit-btn:hover {
-  background-color:#f8b024; 
-}
+
 
 
 .small-b {
