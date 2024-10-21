@@ -84,11 +84,14 @@ const VinSearch = () => {
     
     <div className="vin-search-container">
       <div className="vin-search-content">
-           {/* Heading Section */}
-           <h3 className="vin-subtitle">Find cars audit by VIN numbers</h3>
+        <div className='new-content'>
+             {/* Heading Section */}
+             <h3 className="vin-subtitle">Find cars audit by VIN numbers</h3>
         <h1 className="vin-title">
           Sell your vehicle easily by checking <br /> its history report
         </h1>
+
+        </div>
         {/* VIN Search Form */}
         <div className="vin-form-container sticky-searchbar">
         <form onSubmit={handleSubmit}>
@@ -119,7 +122,7 @@ const VinSearch = () => {
           
             <div className="text-center">
               <h3 className="text-gray-500 text-[18px] font-medium mb-5">HOW IT WORKS?</h3>
-              <h2 className="text-[#222] text-[30px] font-bold max-w-[720px] mx-auto leading-[1.2em]">
+              <h2 className="easy-steps">
                 Three easy steps to get your vehicle history report
               </h2>
             </div>

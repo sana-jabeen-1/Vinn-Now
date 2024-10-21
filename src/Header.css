@@ -1,19 +1,15 @@
-/* Header.css */
-
-/* Container Styling */
 .header {
   width: 100%;
-  background-color: #f5f9fc; /* Light blue background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  position: fixed; /* Fix the header at the top */
-  top: 0; /* Set position to the top */
+  background-color: #f5f9fc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
   left: 0;
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000;
 }
 
-/* Adjust spacing for the rest of the content to accommodate the fixed header */
 .header-spacing {
-  height: 70px; /* Adjust spacing based on the header height */
+  height: 70px;
 }
 
 .header-container {
@@ -25,17 +21,14 @@
   margin: auto;
 }
 
-/* Logo Styling */
 .logo img {
-  width: 150px; 
+  width: 150px;
 }
 
-/* Navigation Links and Contact Button Container */
 .nav-button-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  
 }
 
 /* Navigation Links Styling */
@@ -54,13 +47,11 @@
 }
 
 .nav-item:hover {
-  color: #467cbf; /* Change to theme color on hover */
+  color: #467cbf;
 }
-
-/* Contact Button Styling */
-.contact-button button {
+.contact-button {
   padding: 10px 20px;
-  background-color: #467cbf; /* Theme color for the button */
+  background-color: #467cbf;
   color: white;
   border: none;
   border-radius: 25px;
@@ -71,12 +62,12 @@
 }
 
 .contact-button button:hover {
-  background-color: #f8b024; /* Darker shade on hover */
-  color:#467cbf ;
+  background-color: #f8b024;
+  color: #467cbf;
 }
 
-  .hamburger {
-  display: none; /* Hidden by default */
+.hamburger {
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }
@@ -89,64 +80,57 @@
   transition: 0.4s;
 }
 
-/* Show the hamburger menu on smaller screens */
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Show on mobile */
+    display: flex;
   }
 
   .nav-button-container {
-    display: none; /* Hide by default */
-    flex-direction: column; /* Stack vertically */
-    width: 100%; /* Full width */
-    background-color: #f5f9fc; /* Match the header background */
-    position: absolute; /* Positioning */
-    top: 70px; /* Below the header */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f9fc;
+    position: absolute;
+    top: 70px;
     left: 0;
-    z-index: 999; /* On top */
+    z-index: 999;
   }
 
   .nav-button-container.open {
-    display: flex; /* Show when open */
+    display: flex;
   }
 
   .nav-item {
-    padding: 15px; /* Spacing for links */
-    width: 100%; /* Full width for links */
-    text-align: center; /* Center text */
+    text-wrap: nowrap;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .hamburger {
-    display: flex; 
-    /* Show on mobile */
+    display: flex;
   }
 
-  /* Contact Button Styling */
-.contact-button button {
-  padding: 10px 8px;
-  background-color: #467cbf; /* Theme color for the button */
-  color: white;
-  border: none;
-  border-radius: 7px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 0.3s;
-  text-wrap: nowrap;
-}
+  .contact-button button {
+    padding: 10px 8px;
+    background-color: #467cbf;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    text-wrap: nowrap;
+  }
   .nav-button-container {
     padding: 10px;
-  
   }
-/* 
-  .nav-button-container.open {
-   
-  } */
 
   .nav-item {
-   text-wrap: nowrap;
-   margin-bottom: 6px;
+    text-wrap: nowrap;
+    margin-bottom: 6px;
   }
 }

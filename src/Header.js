@@ -32,11 +32,8 @@ const Header = () => {
           <nav className="nav-links">
             <Link to="/" className="nav-item" onClick={toggleMenu}>Home</Link>
             <Link to="/about-us" className="nav-item" onClick={toggleMenu}>About Us</Link>
-            <div className="contact-button">
-          <Link to="/contact-us">
-            <button>Contact Us</button>
-          </Link>
-        </div>
+            <Link to="/contact-us" className="nav-item" onClick={toggleMenu}>Contact Us</Link>
+
           </nav>
         </div>
 

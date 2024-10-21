@@ -1,34 +1,22 @@
 /* Container Styling */
 .vin-search-container {
   width: 100%;
-  background-color: #e3f7ff; /* Light blue background */
-  padding: 50px 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* Main Content Container */
-.vin-search-container {
-  width: 100%;
-  background-color: #e3f7ff; /* Light blue background */
+  background-color: #e3f7ff;
   padding: 50px 30px;
   justify-content: center;
   align-items: center;
 }
 
 .vin-subtitle{
-  margin-top: 95px;
+  margin-top: 80px;
   color: #467cbf;
   font-size: x-large;
   font-style: bold;
+  text-align: center;
 }
 
 /* Sticky Search Bar */
 .vin-form-container {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 70px; /* Adjust the value to keep it aligned with header */
   z-index: 1000; /* Ensure it stays on top */
   background-color: #e3f7ff; /* Add background color to avoid transparency */
   padding: 20px 0;
@@ -57,6 +45,15 @@
 
 .vin-input-wrapper:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:center; /* Space between each card */
+  margin-right: 35px;
 }
 
 /* Input Field */
@@ -97,14 +94,32 @@
 }
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+
+  .vin-form-container {
+ 
+    background-color: #e3f7ff;
+    padding: 10px 0px;
+    
+    width: 75%;
+    box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1); 
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 50px;
+    
+  }
+  
   .vin-input-wrapper {
-    width: 90%; /* Adjust width to 90% for mobile devices */
-    padding: 8px; /* Reduce padding for smaller screens */
+    width: 100%; 
+    padding: 3px;
+  
   }
 
   .vin-input {
-    padding: 10px; /* Adjust padding for input */
+    padding: 4px; /* Adjust padding for input */
     font-size: 14px; /* Slightly smaller font size */
+    
   }
 
   .vin-submit-btn {
@@ -115,42 +130,106 @@
 
 @media (max-width: 480px) {
 
-  /* Main Content Container */
+  
 .vin-search-content {
   background-color: #e3f7ff;
-  margin: 25px 0px;
-  margin-left: -30px;
+  margin: 25px 5px;
+ margin-right: 10px;
   position: block;
+  text-align: center;
+  padding: 0 20px;
 }
 
- /* Submit Button */
-
+.vin-subtitle{
+  margin-top: 70px;
+  color: #467cbf;
+  
+  font-style: bold;
+  text-align: center;
+ 
+}
+.new-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 30px;
+}
+.vin-title{
+  margin-top: -10px;
+  font-size:20px;
+  font-style: bold;
+  text-align: center;
+}
+.vin-form-container {
+ 
+  background-color: #e3f7ff;
+  padding: 10px 0px;
+  width: 85%;
+  box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1); 
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 0px;
+  
+}
 
   .vin-input-wrapper {
-    width: 60%; /* Full width on very small screens */
-    padding: .8px 2px; /* Further reduce padding */
+    width: 100%; 
+    padding: 3px 2px; 
+   
   }
 
   .vin-input {
     padding: 10px 0px;
-   /* Further adjust padding for input */
-    font-size: 10px; /* Smaller font size */
+  
+    font-size: 10px;
   }
+
+  .vin-submit-btnn {
+    padding: 5px 7px;
+    border: none;
+    outline: none;
+    background-color: #467cbf; /* Theme color */
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s ease;
+    width: 40%;
+    text-wrap: nowrap;
+  }
+  .easy-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 30px;
+
+  }
+
 }
 
-/* "How It Works" Section Styling */
+
 .how-it-works .text-center h3 {
-  color: #467cbf; /* Theme color */
+  color: #467cbf;
   font-size: 22px;
   margin-bottom: 15px;
+ 
 }
 
 .how-it-works .text-center h2 {
   color: #222;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 1.3em;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .steps-container {
@@ -162,7 +241,7 @@
 }
 
 .step-item {
-  width: 300px; /* Fixed width for each step */
+  width: 300px; 
   margin: 0 20px;
   padding: 20px;
   text-align: center;
@@ -198,23 +277,16 @@
   max-width: 250px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .step-item {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
 
-/* VIN History Report Section */
+
 .card-container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between; /* Space between each card */
-  margin: 20px; /* Margin around the container */
+  justify-content:center; 
 }
 
-/* Individual Cards */
+
 .card {
   flex: 1 1 20%;
   margin: 15px;
@@ -244,22 +316,18 @@
   color: #666;
 }
 
-/* Card hover effect */
+
 .card:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Responsive adjustments for medium screens */
-@media (max-width: 1024px) {
-  .card {
-    flex: 1 1 45%; /* Two cards per row */
-  }
+
+
+
+
+@media (max-width: 768px) {
+ 
 }
 
-/* Responsive adjustments for small screens */
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%; /* Full-width cards for mobile */
-  }
-}
+
