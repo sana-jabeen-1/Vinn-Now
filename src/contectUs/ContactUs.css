@@ -1,6 +1,6 @@
 /* Container and Layout */
 
-.contact-main-container{
+.contact-main-container {
   margin-top: 70px;
   margin-bottom: 100px;
 }
@@ -11,10 +11,9 @@
   font-size: 36px; /* Larger font size for desktop */
   font-weight: bold; /* Make the heading bold */
   color: #333; /* Darker color for contrast */
-  margin-top:70px;
-    /* Space below the heading */
+  margin-top: 70px;
+  /* Space below the heading */
 }
-
 
 .contact-container {
   display: flex;
@@ -58,7 +57,7 @@
 .contact-details {
   list-style: none;
   padding: 0;
-  display: flex; 
+  display: flex;
   justify-content: center;
   gap: 12px;
 }
@@ -144,56 +143,98 @@
 /* Adjustments for Smaller Screens */
 @media (max-width: 768px) {
   .contact-inner-wrapper {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
 
-  .contact-info, .contact-form {
-      width: 100%; /* Full width for each section */
+  .contact-info,
+  .contact-form {
+    width: 100%; /* Full width for each section */
   }
 
   .input-group {
-      flex-direction: column; /* Stack input fields vertically */
-      gap: 10px; /* Adjust gap between fields */
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 10px; /* Adjust gap between fields */
   }
 
   .contact-info {
-      padding: 30px; /* Adjust padding for mobile */
+    padding: 30px; /* Adjust padding for mobile */
   }
 
   .contact-form {
-      padding: 20px; /* Adjust padding for mobile */
+    padding: 20px; /* Adjust padding for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .contact-title {
-      font-size: 24px; /* Smaller font size for mobile */
+    font-size: 24px; /* Smaller font size for mobile */
   }
 
   .contact-description {
-      font-size: 14px; /* Smaller font size for mobile */
+    font-size: 14px; /* Smaller font size for mobile */
   }
 
   .submit-button {
-      padding: 10px 20px; /* Adjust button size for smaller screens */
-      font-size: 14px; /* Smaller font size for button */
+    padding: 10px 20px; /* Adjust button size for smaller screens */
+    font-size: 14px; /* Smaller font size for button */
   }
 }
-
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .cont-h {
-      font-size: 28px; /* Smaller font size for mobile */
-      padding-top: 40px; /* Adjust padding for mobile */
-      margin-bottom: 15px; /* Reduce space below heading */
+    font-size: 28px; /* Smaller font size for mobile */
+    margin-top: 70px; /* Reduce space below heading */
+  }
+  .contact-container {
+    padding: 0px 20px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-info {
+    width: 35%;
+  }
+  .contact-form {
+    width: 35%;
+  }
+  .contact-form form {
+    margin-right: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .cont-h {
-      font-size: 24px; /* Even smaller font for very small devices */
-      padding-top: 30px; /* Further reduce padding */
-      margin-bottom: 10px; /* Less space below heading */
+    font-size: 24px; /* Even smaller font for very small devices */
+    margin-top: 100px; /* Less space below heading */
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 20px;
+  }
+  .contact-info {
+    padding: 30px; /* Adjust padding for mobile */
+    width: 75%;
+    margin-right: 60px;
+    margin-left: 18px;
+  }
+  .contact-form {
+    width: 80%;
+    padding-right: 100px;
+  }
+  .contact-form form {
+    margin: 0px 30px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
