@@ -23,7 +23,6 @@
 
 .logo img {
   width: 150px;
-  border: 1px solid #222;
 }
 
 .nav-button-container {
@@ -111,7 +110,6 @@
 @media (max-width: 480px) {
   .hamburger {
     display: flex;
-    border: 1px solid #222;
   }
 
   .contact-button button {

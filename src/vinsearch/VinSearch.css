@@ -17,16 +17,14 @@
 
 /* Sticky Search Bar */
 .vin-form-container {
-  z-index: 1000; /* Ensure it stays on top */
-  background-color: #e3f7ff; /* Add background color to avoid transparency */
-  padding: 20px 0;
-  padding-right: 0px;
-  width: 100%;
-  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  border-radius: 10px;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 50px; /* Adjust this value to align with your header */
+  z-index: 999;
+  /* Background color */
+  padding: 20px 0; /* Optional padding for spacing */
+  width: 100%; /* Full width to fit the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 /* Search Bar Wrapper */
@@ -202,7 +200,6 @@
   .vin-input-wrapper {
     width: 70vw;
     padding: 3px;
-    border: 1px solid #000;
   }
 
   .vin-input {
@@ -214,7 +211,6 @@
     width: 15vw;
     padding: 10px 20px;
     font-size: 14px;
-    border: 1px solid #000;
   }
 
   .card {
@@ -267,12 +263,18 @@
     padding: 15px 5px;
     width: 80vw;
     box-shadow: 0 14px 18px rgba(79, 79, 79, 0.1);
-    display: flex;
+
     align-self: center;
     justify-content: center;
     border-radius: 10px;
     margin-left: 0px;
     justify-self: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 50px; /* Adjust this value to align with your header */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
   }
 
   .vin-input-wrapper {
