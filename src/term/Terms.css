@@ -1,67 +1,115 @@
-.term-container{
+.term-container {
   display: flex;
   margin: 110px 0px;
 }
 
-.terms-content{
+.terms-content {
   width: 65%;
-  padding:0px  30px;
+  padding: 0px 30px;
   text-align: left;
 }
 
 .terms-heading {
-  font-size: 30px; 
-  font-weight: bold; 
-  margin-bottom: 16px; 
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .terms-subheading {
   font-size: 24px;
-  font-weight: 500; 
-  margin-top: 20px; 
-  margin-bottom: 8px; 
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
-
 
 .terms-paragraph {
-  font-size: 19px; 
-  line-height: 1.6; 
-  color: #333; 
-  margin-bottom: 12px; 
+  font-size: 19px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
 }
-
 
 .form-sec {
   background-color: #eef8fc;
-  border-radius: 20px; 
-  padding: 30px; 
-  width: 400px; 
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
   height: 100%;
-  margin: 20px 20px; 
-  text-align: center; 
+  margin: 20px 20px;
+  text-align: center;
   position: sticky;
-  top:160px;
-  
+  top: 160px;
 }
-
 
 .form-sec h1 {
   font-size: 28px;
-  font-weight: bold; 
+  font-weight: bold;
   color: #333;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
 .small-b {
-  display: block; 
-  margin-top: 12px; 
-  font-size: 14px; 
-  color: #999; 
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #999;
+}
+.vin-input-term {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+  border-radius: 15px;
+}
+.submit-btn-term {
+  padding: 14px 30px;
+  border: none;
+  outline: none;
+  background-color: #467cbf;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.submit-btn-term:hover {
+  background-color: #f8b024;
+  color: #467cbf;
+}
+
+@media (max-width: 480px) {
+  .term-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    flex-direction: column;
+  }
+  .terms-content {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .form-sec {
+    background-color: #eef8fc;
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 80%;
+    text-align: center;
+  }
+  .form-sec input {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-sec button {
+    width: 45%;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
 }

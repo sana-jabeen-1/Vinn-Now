@@ -141,44 +141,6 @@
 }
 
 /* Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-  .contact-inner-wrapper {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-
-  .contact-info,
-  .contact-form {
-    width: 100%; /* Full width for each section */
-  }
-
-  .input-group {
-    flex-direction: column; /* Stack input fields vertically */
-    gap: 10px; /* Adjust gap between fields */
-  }
-
-  .contact-info {
-    padding: 30px; /* Adjust padding for mobile */
-  }
-
-  .contact-form {
-    padding: 20px; /* Adjust padding for mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-title {
-    font-size: 24px; /* Smaller font size for mobile */
-  }
-
-  .contact-description {
-    font-size: 14px; /* Smaller font size for mobile */
-  }
-
-  .submit-button {
-    padding: 10px 20px; /* Adjust button size for smaller screens */
-    font-size: 14px; /* Smaller font size for button */
-  }
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
