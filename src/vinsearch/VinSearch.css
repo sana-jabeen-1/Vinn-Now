@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.vin-subtitle{
+.vin-subtitle {
   margin-top: 80px;
   color: #467cbf;
   font-size: x-large;
@@ -47,15 +47,6 @@
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-
-.card-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content:center; /* Space between each card */
-  margin-right: 35px;
-}
-
 /* Input Field */
 .vin-input {
   flex: 1;
@@ -83,143 +74,19 @@
 }
 
 .vin-submit-btnn:hover {
-  background-color: #f8b024; /* Darker shade */
+  background-color: #f8b024;
   color: #467cbf;
 }
-
 
 .vin-submit-btn:hover {
-  background-color: #f8b024; /* Darker shade */
+  background-color: #f8b024;
   color: #467cbf;
 }
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-
-  .vin-form-container {
- 
-    background-color: #e3f7ff;
-    padding: 10px 0px;
-    
-    width: 75%;
-    box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1); 
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 50px;
-    
-  }
-  
-  .vin-input-wrapper {
-    width: 100%; 
-    padding: 3px;
-  
-  }
-
-  .vin-input {
-    padding: 4px; /* Adjust padding for input */
-    font-size: 14px; /* Slightly smaller font size */
-    
-  }
-
-  .vin-submit-btn {
-    padding: 10px 20px; /* Adjust padding for button */
-    font-size: 14px; /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 480px) {
-
-  
-.vin-search-content {
-  background-color: #e3f7ff;
-  margin: 25px 5px;
- margin-right: 10px;
-  position: block;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.vin-subtitle{
-  margin-top: 70px;
-  color: #467cbf;
-  
-  font-style: bold;
-  text-align: center;
- 
-}
-.new-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  margin-right: 30px;
-}
-.vin-title{
-  margin-top: -10px;
-  font-size:20px;
-  font-style: bold;
-  text-align: center;
-}
-.vin-form-container {
- 
-  background-color: #e3f7ff;
-  padding: 10px 0px;
-  width: 85%;
-  box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1); 
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-left: 0px;
-  
-}
-
-  .vin-input-wrapper {
-    width: 100%; 
-    padding: 3px 2px; 
-   
-  }
-
-  .vin-input {
-    padding: 10px 0px;
-  
-    font-size: 10px;
-  }
-
-  .vin-submit-btnn {
-    padding: 5px 7px;
-    border: none;
-    outline: none;
-    background-color: #467cbf; /* Theme color */
-    color: #fff;
-    border-radius: 30px;
-    font-size: 12px;
-    cursor: pointer;
-    font-weight: 300;
-    transition: background-color 0.3s ease;
-    width: 40%;
-    text-wrap: nowrap;
-  }
-  .easy-steps{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    margin-right: 30px;
-
-  }
-
-}
-
 
 .how-it-works .text-center h3 {
   color: #467cbf;
   font-size: 22px;
   margin-bottom: 15px;
- 
 }
 
 .how-it-works .text-center h2 {
@@ -241,7 +108,7 @@
 }
 
 .step-item {
-  width: 300px; 
+  width: 300px;
   margin: 0 20px;
   padding: 20px;
   text-align: center;
@@ -249,7 +116,7 @@
 }
 
 .step-item:hover {
-  transform: translateY(-10px); /* Slightly elevate the card on hover */
+  transform: translateY(-10px);
 }
 
 .step-image {
@@ -277,18 +144,15 @@
   max-width: 250px;
 }
 
-
-
 .card-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content:center; 
+  justify-content: center;
 }
 
-
 .card {
-  flex: 1 1 20%;
+  flex: 1 20%;
   margin: 15px;
   padding: 20px;
   background-color: #ffffff;
@@ -297,6 +161,7 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  margin-left: 20px;
 }
 
 .card img {
@@ -316,18 +181,179 @@
   color: #666;
 }
 
-
 .card:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
 }
 
-
-
-
-
 @media (max-width: 768px) {
- 
+  .vin-form-container {
+    background-color: #e3f7ff;
+    padding: 10px 0px;
+    width: 75%;
+    box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 50px;
+  }
+
+  .vin-input-wrapper {
+    width: 100%;
+    padding: 3px;
+  }
+
+  .vin-input {
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .vin-submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .card {
+    flex: 1 1 30%;
+    margin: 15px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 20px;
+  }
 }
 
+@media (max-width: 480px) {
+  .vin-search-content {
+    background-color: #e3f7ff;
+    margin: 25px 5px;
+    margin-right: 30px;
+    position: block;
+    text-align: center;
+    padding: 0 20px;
+  }
 
+  .vin-subtitle {
+    margin-top: 70px;
+    color: #467cbf;
+
+    font-style: bold;
+    text-align: center;
+  }
+  .new-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  .vin-title {
+    margin-top: -10px;
+    font-size: 20px;
+    font-style: bold;
+    text-align: center;
+  }
+  .vin-form-container {
+    background-color: #e3f7ff;
+    padding: 15px 5px;
+    width: 80vw;
+    box-shadow: 0 14px 18px rgba(79, 79, 79, 0.1);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 0px;
+    justify-self: center;
+  }
+
+  .vin-input-wrapper {
+    width: 78vw;
+    padding: 8px 7px;
+    display: flex;
+    justify-self: center;
+  }
+
+  .vin-input {
+    padding: 10px 0px;
+
+    font-size: 10px;
+    max-width: 85%;
+    margin-right: 20px;
+    justify-self: center;
+  }
+
+  .vin-submit-btnn {
+    padding: 5px 7px;
+    border: none;
+    outline: none;
+    background-color: #467cbf;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s ease;
+    width: 20vw;
+    text-wrap: nowrap;
+  }
+  .steps-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 50px;
+  }
+
+  .step-item {
+    width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .step-item:hover {
+    transform: translateY(-10px);
+  }
+  .easy-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 30px;
+  }
+
+  .step-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    background-color: #467cbf;
+    align-self: center;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card {
+    flex: 60%;
+    margin: 15px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    align-self: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+}
