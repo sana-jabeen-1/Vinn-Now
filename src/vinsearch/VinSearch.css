@@ -190,7 +190,7 @@
   .vin-form-container {
     background-color: #e3f7ff;
     padding: 10px 0px;
-    width: 75%;
+    width: 95%;
     box-shadow: 0 14px 18px rgba(44, 44, 44, 0.1);
     display: flex;
     align-self: center;
@@ -200,8 +200,9 @@
   }
 
   .vin-input-wrapper {
-    width: 100%;
+    width: 70vw;
     padding: 3px;
+    border: 1px solid #000;
   }
 
   .vin-input {
@@ -209,9 +210,11 @@
     font-size: 14px;
   }
 
-  .vin-submit-btn {
+  .vin-submit-btnn {
+    width: 15vw;
     padding: 10px 20px;
     font-size: 14px;
+    border: 1px solid #000;
   }
 
   .card {

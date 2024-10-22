@@ -64,11 +64,11 @@
   margin-right: 10px;
   font-size: 18px;
   transition: transform 0.3s ease;
-  transform: rotate(0deg); /* Start pointing right */
+  transform: rotate(0deg);
 }
 
 .accordion-icon.rotate {
-  transform: rotate(103deg); /* Rotate downwards */
+  transform: rotate(90deg);
 }
 
 /* Accordion Content */

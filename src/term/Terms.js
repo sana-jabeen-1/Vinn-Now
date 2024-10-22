@@ -12,11 +12,9 @@ const Terms = () => {
   const navigate = useNavigate();
   let { pathname } = useLocation();
 
-
   useEffect(() => {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }, [pathname]);
-  
 
   const transliterate = (c) => {
     return "0123456789.ABCDEFGH..JKLMN.P.R..STUVWXYZ".indexOf(c) % 10;
@@ -164,7 +162,7 @@ const Terms = () => {
         </h1>
 
         <form onSubmit={handleSubmit}>
-          <div className="vin-input-wrapper-term">
+          <div className="vin-input-term">
             <input
               type="text"
               className="vin-input-term"
@@ -175,12 +173,12 @@ const Terms = () => {
               onChange={handleVinChange}
             />
           </div>
-          <button type="submit" className="vin-submit-btn" disabled={loading}>
+          <button type="submit" className="submit-btn-term" disabled={loading}>
             {loading ? "Loading..." : "Get Report"}
           </button>
         </form>
         {message && <p className="vin-message">{message}</p>}
-        <p> Add a line here Reminder For Sana! </p>
+        <p> No VIN yet? Get a prepaid Auto Audit PRO VINreport</p>
       </div>
     </div>
   );
