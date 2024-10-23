@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.vin-form-container {
+/* .vin-form-container {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
@@ -41,7 +41,7 @@
   padding: 20px 50px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);
-}
+} */
 
 .vin-input-wrapper {
   display: flex;
@@ -204,7 +204,7 @@
 }
 
 @media (max-width: 768px) {
-  .vin-form-container {
+  /* .vin-form-container {
     background-color: #e3f7ff;
     padding: 10px 0px;
     width: 95%;
@@ -214,7 +214,7 @@
     justify-content: center;
     border-radius: 10px;
     margin-left: 50px;
-  }
+  } */
 
   .vin-input-wrapper {
     width: 70vw;
@@ -281,10 +281,9 @@
   }
   .vin-form-container {
     background-color: #e3f7ff;
-    padding: 15px 5px;
-    width: 90vw;
-    box-shadow: 0 14px 18px rgba(79, 79, 79, 0.1);
-
+    padding: 15px 40px;
+    width: 100%;
+    box-shadow: 0 14px 18px rgba(38, 127, 237, 0.1);
     align-self: center;
     justify-content: center;
     border-radius: 10px;
@@ -299,33 +298,33 @@
   }
 
   .vin-input-wrapper {
-    width: 78vw;
-    padding: 8px 7px;
+    width: 100%;
+    padding: 8px 10px;
+
     display: flex;
     justify-self: center;
   }
 
   .vin-input {
     padding: 10px 0px;
-
-    font-size: 10px;
-    max-width: 85%;
+    font-size: 15px;
+    max-width: 80%;
     margin-right: 20px;
     justify-self: center;
   }
 
   .vin-submit-btnn {
-    padding: 5px 7px;
+    padding: 5px 12px;
     border: none;
     outline: none;
     background-color: #467cbf;
     color: #fff;
     border-radius: 30px;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
-    font-weight: 300;
+    font-weight: bold;
     transition: background-color 0.3s ease;
-    width: 20vw;
+    width: 100%;
     text-wrap: nowrap;
   }
   .how-it-works {
@@ -388,7 +387,7 @@
   .card {
     flex: 60%;
     margin: 15px;
-    padding: 10px 25px;
+    padding: 35px 25px;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;

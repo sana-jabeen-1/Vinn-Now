@@ -1,6 +1,6 @@
 /* General FAQ Section Styles */
 .faq-section {
-  padding: 50px 0;
+  padding: 30px 5px;
   background-color: #f9f9f9;
 }
 
@@ -112,7 +112,11 @@
 } */
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 20px 5px;
+    background-color: #f9f9f9;
+  }
   .faq-title {
     font-size: 25px;
     padding: 10px;
