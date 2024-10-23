@@ -60,6 +60,8 @@
   display: flex;
   justify-content: center;
   gap: 12px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-item {
@@ -89,10 +91,9 @@
   height: 30px;
 }
 
-/* Contact Form Section */
 .contact-form {
   width: 30%;
-  padding: 30px; /* Increased width to better use the available space */
+  padding: 30px;
 }
 
 .input-group {
@@ -125,7 +126,7 @@
   font-size: 16px;
 }
 
-.submit-button {
+.submit-buttonn {
   background-color: #467cbf;
   color: white;
   padding: 15px 30px;
@@ -135,18 +136,14 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.submit-button:hover {
+.submit-buttonn:hover {
   background-color: #f8b024;
 }
 
-/* Adjustments for Smaller Screens */
-
-/* Mobile responsiveness */
 @media (max-width: 768px) {
   .cont-h {
-    font-size: 28px; /* Smaller font size for mobile */
-    margin-top: 70px; /* Reduce space below heading */
+    font-size: 28px;
+    margin-top: 70px;
   }
   .contact-container {
     padding: 0px 20px;
@@ -166,12 +163,25 @@
   .contact-form form {
     margin-right: 50px;
   }
+  .submit-buttonn {
+    background-color: #467cbf;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-buttonn:hover {
+    background-color: #f8b024;
+  }
 }
 
 @media (max-width: 480px) {
   .cont-h {
-    font-size: 24px; /* Even smaller font for very small devices */
-    margin-top: 100px; /* Less space below heading */
+    font-size: 24px;
+    margin-top: 5px;
   }
   .contact-container {
     display: flex;
@@ -179,17 +189,16 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .contact-info {
-    padding: 30px; /* Adjust padding for mobile */
-    width: 75%;
-    margin-right: 60px;
-    margin-left: 18px;
+    padding: 30px;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .contact-form {
-    width: 80%;
-    padding-right: 100px;
+    width: 100%;
   }
   .contact-form form {
     margin: 0px 30px;
@@ -198,5 +207,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .submit-buttonn {
+    background-color: #467cbf;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-buttonn:hover {
+    background-color: #f8b024;
   }
 }
