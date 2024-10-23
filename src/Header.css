@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .hamburger {
     display: flex;
   }
@@ -128,7 +128,7 @@
     width: 100%;
     background-color: #f5f9fc;
     position: absolute;
-    top: 50px;
+    top: 75px;
     left: 0;
     z-index: 999;
   }
@@ -144,6 +144,6 @@
     text-align: center;
   }
   .logo img {
-    max-width: 12vh;
+    max-width: 20vh;
   }
 }

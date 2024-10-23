@@ -5,7 +5,7 @@ import "../Header.css";
 import FaqComp from "../FaqComp";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../Vin-Me-Now-LOGO-F.png";
+//import logo from "../Vin-Me-Now-LOGO-F.png";
 import title from "../title-icn.svg";
 import del from "../delet-icon.svg";
 import brand from "../brand-check.svg";
@@ -17,6 +17,9 @@ import openlens from "../openlens.svg";
 import active from "../active-theft.svg";
 import registration from "../title-icn.svg";
 import otherinfo from "../other-info.svg";
+import hiwone from "../how-it-work-1.png";
+import hiwtow from "../how-it-work-2.png";
+import hiwthree from "../how-it-work-3.png";
 
 const VinSearch = () => {
   const [vin, setVin] = useState("");
@@ -57,14 +60,24 @@ const VinSearch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateVin(vin)) {
+
+    // Trim the VIN to remove any leading/trailing whitespace
+    const trimmedVin = vin.trim();
+
+    // Check if VIN is empty
+    if (!trimmedVin) {
+      setMessage("Please enter VIN Number");
+      return;
+    }
+
+    if (validateVin(trimmedVin)) {
       setMessage("VIN is valid. Redirecting to details form...");
       setLoading(true);
 
       setTimeout(() => {
         setLoading(false);
 
-        navigate("/personal-info", { state: { vin: vin } });
+        navigate("/personal-info", { state: { vin: trimmedVin } });
       }, 1000);
     } else {
       setMessage(
@@ -112,9 +125,8 @@ const VinSearch = () => {
               {/* Display validation message */}
               {message && <p className="vin-message">{message}</p>}
             </div>
-
-            {/* "How It Works" Section */}
           </div>
+          {/* "How It Works" Section */}
           <section className="how-it-works">
             <div className="text-center">
               <h3 className="text-gray-500 text-[18px] font-medium mb-5">
@@ -128,7 +140,7 @@ const VinSearch = () => {
               {/* Step 1 */}
               <div className="step-item text-center">
                 <img
-                  src="https://www.autoauditpro.com/_next/static/media/how-it-work-1.e50c8ac5.png"
+                  src={hiwone}
                   alt="Enter VIN Number"
                   className="step-image"
                 />
@@ -139,11 +151,7 @@ const VinSearch = () => {
               </div>
               {/* Step 2 */}
               <div className="step-item text-center md:border-l-2 md:border-r-2 border-[#ddd]">
-                <img
-                  src="https://www.autoauditpro.com/_next/static/media/how-it-work-2.d9fa2745.png"
-                  alt="Verify Payment"
-                  className="step-image"
-                />
+                <img src={hiwtow} alt="Verify Payment" className="step-image" />
                 <h3 className="step-title">Verify Payment</h3>
                 <p className="step-description">
                   Select payment method to proceed
@@ -151,11 +159,7 @@ const VinSearch = () => {
               </div>
               {/* Step 3 */}
               <div className="step-item text-center">
-                <img
-                  src="https://www.autoauditpro.com/_next/static/media/how-it-work-3.bce2e4e5.png"
-                  alt="Email Report"
-                  className="step-image"
-                />
+                <img src={hiwthree} alt="Email Report" className="step-image" />
                 <h3 className="step-title">Email Report</h3>
                 <p className="step-description">Get your Report Via Email</p>
               </div>

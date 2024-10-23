@@ -74,12 +74,13 @@ const ContactUs = () => {
               <a href="mailto:developer@vinmenow.com">developer@vinmenow.com</a>
             </li>
             <li className="contact-item">
-              <a href="tel:46994301566">469-943-01333</a>
+              <a href="tel:46994301566">210-903-5954</a>
             </li>
             <li className="contact-item">
               <p className="contact-des">
                 For corporates discussion for complaints, technical assistance
-                we are available for your support via live chat or email us
+                we are available for your support via live chat or email us:{" "}
+                <br />
                 {"developer@vinmenow.com"}
               </p>
             </li>
