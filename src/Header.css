@@ -1,3 +1,10 @@
+/* 1. Global box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .header {
   width: 100%;
   background-color: #f5f9fc;
@@ -22,20 +29,20 @@
 }
 
 .logo img {
-  width: 150px;
+  max-width: 15vw;
 }
 
 .nav-button-container {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: flex-end;
 }
 
-/* Navigation Links Styling */
 .nav-links {
   display: flex;
   gap: 20px;
-  margin-right: 20px; /* Add spacing between links and button */
+  margin-right: 20px;
 }
 
 .nav-item {
@@ -49,6 +56,7 @@
 .nav-item:hover {
   color: #467cbf;
 }
+
 .contact-button {
   padding: 10px 20px;
   background-color: #467cbf;
@@ -80,10 +88,12 @@
   transition: 0.4s;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
+
   .nav-button-container {
     display: none;
     flex-direction: column;
@@ -107,29 +117,33 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .hamburger {
     display: flex;
   }
 
-  .contact-button button {
-    padding: 10px 8px;
-    background-color: #467cbf;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s;
-    text-wrap: nowrap;
-  }
   .nav-button-container {
-    padding: 10px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f9fc;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-button-container.open {
+    display: flex;
   }
 
   .nav-item {
     text-wrap: nowrap;
-    margin-bottom: 6px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .logo img {
+    max-width: 12vh;
   }
 }

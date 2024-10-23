@@ -103,6 +103,13 @@
   color: #005bb5;
   text-decoration: none;
 }
+/* @media (max-width: 480px) {
+  .faq-section {
+    padding: 0px 0px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
