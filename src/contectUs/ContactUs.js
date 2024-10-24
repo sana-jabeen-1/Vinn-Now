@@ -37,14 +37,13 @@ const ContactUs = () => {
         "template_11p5kd9",
         {
           from_name: formData.name,
-          to_name: "Shahreyar Ahmed",
+          to_name: "Vin Me Now Support",
           from_email: formData.email,
           to_email: "developer@vinmenow.com",
           message: formData.message,
         },
         `dnUq37UngSXhNR0mr` // Replace with your EmailJS user ID
       )
-
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -62,37 +61,47 @@ const ContactUs = () => {
 
   return (
     <div className="contact-main-container">
-      <h1 className="cont-h"> Contact Us </h1>
-      <p className="cont-p">Any question or remarks? Just write us a message</p>
+      <h1 className="cont-h">Contact Us</h1>
+      <p className="cont-p">
+        Any questions or remarks? Just write us a message.
+      </p>
 
       <div className="contact-container">
         <div className="contact-info">
           <h3 className="contact-title">Contact Information</h3>
-          <p className="contact-description">Contact us via email!</p>
+          <p className="contact-description">
+            We'd love to hear from you! Reach out to us via email or phone.
+          </p>
           <ul className="contact-details">
             <li className="contact-item">
               <a href="mailto:developer@vinmenow.com">developer@vinmenow.com</a>
             </li>
             <li className="contact-item">
-              <a href="tel:46994301566">210-903-5954</a>
+              <a href="tel:2109035954">210-903-5954</a>
             </li>
             <li className="contact-item">
               <p className="contact-des">
-                For corporates discussion for complaints, technical assistance
-                we are available for your support via live chat or email us:{" "}
-                <br />
-                {"developer@vinmenow.com"}
+                For corporate inquiries, complaints, or technical assistance, we
+                are here to support you via live chat or email:{" "}
+                <a href="mailto:developer@vinmenow.com">
+                  developer@vinmenow.com
+                </a>
               </p>
-            </li>
-            <li className="contact-item">
-              <a href="#"></a>
             </li>
           </ul>
           <div className="social-icons">
-            <a href="https://www.facebook.com/Vinmenow">
+            <a
+              href="https://www.facebook.com/Vinmenow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ImFacebook2 />
             </a>
-            <a href="https://www.instagram.com/vinmenow/">
+            <a
+              href="https://www.instagram.com/vinmenow/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram />
             </a>
           </div>

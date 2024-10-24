@@ -176,7 +176,7 @@ const VinSearch = () => {
               </p>
             </div>
             <div class="card">
-              <img src={del} alt="Auto Audit Pro" />
+              <img src={del} alt="vinme now" />
               <h3>Junk / Salvage Info</h3>
               <p>
                 Current and historical information from junk yards, dismantlers,
