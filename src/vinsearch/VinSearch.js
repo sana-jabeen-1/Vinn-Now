@@ -96,7 +96,7 @@ const VinSearch = () => {
             <div className="new-content">
               {/* Heading Section */}
               <h3 className="vin-subtitle">Find Cars audit by VIN numbers</h3>
-              <h1 className="vin-title">
+              <h1 className="vinn-title">
                 Sell your vehicle easily by checking <br /> its history report
               </h1>
             </div>
