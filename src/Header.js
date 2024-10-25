@@ -40,6 +40,7 @@ const Header = () => {
         {/* Contact Us Button - Always Visible */}
        
       </div>
+                
     </header>
   );
 };
