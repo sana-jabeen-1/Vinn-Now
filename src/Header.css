@@ -13,7 +13,6 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  height: 100px;
 }
 
 .header-spacing {
@@ -24,10 +23,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 10px 30px;
   max-width: 1200px;
+  height: 9vw;
   margin: auto;
 }
+
 .logo img {
   max-width: 15vw;
 }
@@ -121,7 +122,23 @@
   .hamburger {
     display: flex;
   }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    max-width: 1200px;
+    height: 8vh;
+    margin: auto;
+  }
 
+  .nav-button-container {
+    margin-top: -2%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+  }
   .nav-button-container {
     display: none;
     flex-direction: column;

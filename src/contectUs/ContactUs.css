@@ -6,13 +6,12 @@
 }
 
 .cont-h {
-  padding-top: 60px; /* Padding from top */
-  text-align: center; /* Center the heading */
-  font-size: 36px; /* Larger font size for desktop */
-  font-weight: bold; /* Make the heading bold */
-  color: #333; /* Darker color for contrast */
+  padding-top: 60px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
   margin-top: 70px;
-  /* Space below the heading */
 }
 
 .contact-container {
@@ -27,19 +26,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  width: 100%; /* Increased width to cover more space */
+  width: 100%;
   background-color: #fff;
   border-radius: 12px;
   padding: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Information Section */
 .contact-info {
   background-color: #eef8fc;
   border-radius: 12px;
   padding: 50px;
-  width: 30%; /* Increased width for better alignment */
+  width: 45%;
 }
 
 .contact-title {
@@ -92,7 +90,7 @@
 }
 
 .contact-form {
-  width: 30%;
+  width: 45%;
   padding: 30px;
 }
 
