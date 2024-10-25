@@ -265,6 +265,7 @@
     font-style: bold;
     text-align: center;
   }
+
   .new-content {
     display: flex;
     flex-direction: column;
@@ -273,11 +274,12 @@
     font-size: 30px;
   }
 
-  .vin-title {
+  .vinn-title {
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 25px;
     font-style: bold;
     text-align: center;
+    padding: 0px 7px;
   }
   .vin-form-container {
     background-color: #e3f7ff;
