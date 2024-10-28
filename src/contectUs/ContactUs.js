@@ -4,6 +4,7 @@ import "./ContactUs.css";
 import { ImFacebook2 } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
+import CustomAlert from "../CustomAlert";
 import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
@@ -19,6 +20,7 @@ const ContactUs = () => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showAlert, setShowAlert] = useState(false); // State to manage alert visibility
   let { pathname } = useLocation();
 
   useEffect(() => {
@@ -79,14 +81,14 @@ const ContactUs = () => {
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
             setIsSubmitted(true);
-            alert("Message sent successfully!");
+            setShowAlert(true); // Show the alert
+            setTimeout(() => setShowAlert(false), 5000); // Hide the alert after 5 seconds
           },
           (error) => {
             console.log("FAILED...", error);
             alert("Failed to send message, please try again later.");
           }
         );
-
       setFormData({ name: "", email: "", message: "" });
     }
   };
@@ -102,6 +104,12 @@ const ContactUs = () => {
           content="VinMeNow offers customer support for all VIN check inquiries. Contact us for fast, friendly assistance."
         />
       </Helmet>
+      {showAlert && (
+        <CustomAlert
+          message="Message sent successfully!"
+          onClose={() => setShowAlert(false)}
+        />
+      )}
       <h1 className="cont-h">
         Reach Out to VinMeNow for Vehicle History Report Assistance
       </h1>

@@ -1,0 +1,58 @@
+/* CustomAlert.css */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #467cbf;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(63, 2, 230, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  animation: popInOut 2.5s ease forwards;
+}
+
+.custom-alert-content {
+  display: flex;
+  align-items: center;
+}
+
+.custom-alert-message {
+  font-size: 1em;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.custom-alert-close {
+  background: none;
+  border: none;
+  color: #f8b024;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Pop-in and fade-out animation */
+@keyframes popInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.05) translateY(0);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+}
