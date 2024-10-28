@@ -34,12 +34,15 @@ const Footer = () => {
           <ul>
             <li>
               <Link to="./terms">Terms and Condition</Link>
+              <li>
+                <Link to="./refund">Refund Policy</Link>
+              </li>
             </li>
           </ul>
         </div>
         <div className="footer-section">
           <h4>Our Address</h4>
-          <p></p>
+          <p>Magnolia Ave, Chicago, IL, 60640, United States</p>
           <div className="social-icons">
             <a
               href="https://facebook.com"
