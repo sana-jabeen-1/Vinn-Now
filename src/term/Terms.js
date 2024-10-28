@@ -63,20 +63,20 @@ const Terms = () => {
       <div className="terms-content">
         <h1 className="terms-heading">DISCLAIMER</h1>
         <p className="terms-paragraph">
-          By proceeding with the payment, you acknowledge that you are paying
-          solely for the vehicle history report from VIN ME NOW, and you agree
-          that charges are non-refundable unless the report is not delivered
-          within 24 hours of purchase. In such a case, you are entitled to
-          request a refund. Otherwise, no chargeback or refund claims will be
-          entertained.
+          By completing the payment, you confirm that the charges are
+          exclusively for the vehicle history report and acknowledge that they
+          are non-refundable unless the report is not delivered within 24 hours
+          of purchase. If the report is not received within this timeframe, you
+          are eligible to request a refund. Beyond this, no chargeback or refund
+          requests will be accepted.
         </p>
 
         <h1 className="terms-heading">Terms and Conditions</h1>
         <p className="terms-paragraph">
-          By continuing to browse and use this website, you agree to comply with
-          and be bound by the following terms and conditions, which together
-          with the NMVTIS Disclaimer and Privacy Policy govern VIN ME NOW's
-          relationship with you in relation to this website.
+          If you continue to browse and use this website, you agree to abide by
+          and be limited and bound by the following terms and conditions, along
+          with the NMVTIS Disclaimer and Privacy Policy, which together police
+          over Vinmenow.com’s relationship with you in relation to this website.
         </p>
 
         <p className="terms-paragraph">

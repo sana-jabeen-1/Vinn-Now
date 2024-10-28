@@ -282,8 +282,7 @@
   .vin-search-container {
     overflow-x: hidden;
     width: 100%;
-    background-color: #e3f7ff;
-    padding: 15px 0px;
+    padding: 0px 0px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -292,22 +291,19 @@
   }
 
   .vin-search-content {
-    height: 20vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .new-content {
-    width: 85%;
-    margin-top: 7px 20px;
-    margin-top: 83px;
-    margin-left: 55px;
-    text-align: center;
+    margin-top: 108px;
+    width: 100%;
+    height: 30vh; /* Make the height 100% of the viewport height */
     display: flex;
-    align-self: center;
-    height: 30vh;
-    margin-bottom: 15px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 20px;
   }
   .vin-subtitle {
     margin-top: 20px;
@@ -316,43 +312,38 @@
     text-transform: capitalize;
     font-size: 15px;
     font-style: bold;
-    text-align: center;
-    justify-content: center;
   }
 
   .vinn-title {
     margin-top: 5px;
     font-size: 20px;
     font-style: bold;
-    text-align: center;
-    padding: 0px 10px;
   }
 
-  /* .vin-form-container {
-    padding: 15px 40px;
+  .vin-form-container {
+    padding: 0px 0px;
     width: 100%;
     box-shadow: 0 14px 18px rgba(38, 127, 237, 0.1);
-    align-self: center;
+    align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-left: 0px;
-    justify-self: center;
+    margin-bottom: 30px;
+    justify-content: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
     z-index: 999;
     display: flex;
     flex-direction: column;
-  } */
+  }
 
   .vin-input-wrapper {
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 7px;
-    border-radius: 55px;
+    border-radius: 65px;
     background-color: #ffffff;
     transition: border 0.3s ease;
-    width: 37vh;
+    padding: 7px;
+    width: 100%;
   }
 
   .vin-input-wrapper:hover {
@@ -382,6 +373,7 @@
     cursor: pointer;
     font-weight: 700;
     width: 30%;
+    text-wrap: nowrap;
     transition: background-color 0.3s ease;
   }
 

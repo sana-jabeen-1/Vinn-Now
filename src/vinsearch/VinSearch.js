@@ -99,9 +99,9 @@ const VinSearch = () => {
           <div
             className="vin-search-content"
             style={{
-              height: isMobile ? "73vh" : "40vw",
+              height: isMobile ? "85vh" : "40vw",
               backgroundImage: `url(${isMobile ? vinmobile : vinbanner})`,
-              backgroundSize: "contain",
+              backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
