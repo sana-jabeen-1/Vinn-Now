@@ -14,119 +14,153 @@ const AboutUs = () => {
       <div className="about-content">
         <h1 className="about-heading">About Us</h1>
         <p className="about-paragraph">
-          At VIN ME NOW, we believe that knowledge is power, especially when it
-          comes to making one of life’s significant investments—buying a car.
-          Our mission is to empower buyers, sellers, and car enthusiasts by
-          providing detailed and transparent vehicle history reports that unveil
-          the true story behind every vehicle.
+          At Vin Me Now, we know that being informed is vital when you are
+          making big decisions like buying a car. Our aim is to provide buyers,
+          sellers, and car enthusiasts with detailed, and transparent vehicle
+          history reports, so that they know the complete story behind every
+          vehicle.
         </p>
 
         <h2 className="about-subheading">What We Do</h2>
         <p className="about-paragraph">
-          Powered by BeMyMarketer, VIN ME NOW offers cutting-edge vehicle
-          history reports based on your car’s VIN (Vehicle Identification
-          Number). We go beyond the basics to deliver a thorough, in-depth
-          analysis of a vehicle’s past, including:
+          Powered by AYS Technologies, Vin Me Now delivers advanced vehicle
+          history reports using your car’s VIN (Vehicle Identification Number).
+          We go beyond the surface-level data to provide a comprehensive
+          analysis of a vehicle’s background that includes:
         </p>
         <ul className="about-list">
           <li>
-            <strong>Ownership History:</strong> Know the number of previous
-            owners, transfer details, and title history.
+            <strong>Ownership History:</strong> Learn about previous owners,
+            transfer details, and title records
           </li>
           <li>
-            <strong>Accident Reports:</strong> Find out if the vehicle has been
-            in any accidents, along with the severity and repair details.
+            <strong>Accident Reports:</strong> Discover if the car has been in
+            any accident, also including severity, impact and repair
+            information.
           </li>
           <li>
-            <strong>Service and Maintenance Records:</strong> Get access to a
-            detailed service history, ensuring the car has been well-maintained.
+            <strong>Service and Maintenance Records:</strong> Obtain and examine
+            a detailed history about the vehicle's service to make sure of the
+            proper maintenance.
           </li>
           <li>
-            <strong>Odometer Verification:</strong> Detect potential odometer
-            rollbacks or inconsistencies.
+            <strong>Odometer Verification:</strong> Spot potential odometer
+            rollbacks or irregularities.
           </li>
           <li>
-            <strong>Theft and Salvage Checks:</strong> Ensure the vehicle hasn’t
-            been reported stolen or labeled as a salvage vehicle.
+            <strong>Theft and Salvage Checks:</strong> Verify the vehicle hasn’t
+            been reported as stolen or declared salvage.
           </li>
         </ul>
 
         <p className="about-paragraph">
-          We understand that a vehicle’s history plays a crucial role in
-          determining its true value and safety. With VIN ME NOW, you gain
-          access to data that helps protect you from potential risks, ensuring
-          that your next car purchase is a sound investment.
+          We know that a car’s history directly affects its value and safety.
+          With Vin Me Now, you get the data and information needed to prevent
+          any future risks, guaranteeing your next vehicle purchase is a smart
+          and secure investment.
         </p>
 
         <h2 className="about-subheading">Why Choose VIN ME NOW?</h2>
         <ul className="about-list">
           <li>
-            <strong>Trusted Data:</strong> Our reports pull from verified and
-            reputable databases, providing you with accurate and reliable
-            information.
+            <strong>Trusted Data:</strong> Our reports are sourced from verified
+            and reliable databases, giving you accurate information you can
+            depend on
           </li>
           <li>
-            <strong>Advanced Technology:</strong> Leveraging the latest
-            technology, we deliver comprehensive and easy-to-read reports within
-            minutes.
+            <strong>Advanced Technology:</strong> Powered by AYS Technologies,
+            we utilize the latest technology to give you detailed, easy-to-read
+            reports in just a few minutes.
           </li>
           <li>
-            <strong>Customer-Focused Approach:</strong> Our dedicated team is
-            committed to providing exceptional service, ensuring that your
-            experience with VIN ME NOW is smooth, transparent, and stress-free.
+            <strong>Customer-Focused Approach:</strong> Our dedicated team
+            ensures a smooth, transparent, and hassle-free experience every step
+            of the way with unmatchable service with Vin Me Now.
           </li>
           <li>
-            <strong>Security and Privacy:</strong> We prioritize the security of
-            your data, ensuring that your information is protected at every
-            step.
+            <strong>Security and Privacy:</strong> We prioritize your data’s
+            safety, safeguarding your information throughout the entire process.
           </li>
         </ul>
 
         <h2 className="about-subheading">Our Commitment</h2>
         <p className="about-paragraph">
-          At VIN ME NOW, we don’t just provide reports; we provide peace of
-          mind. We understand the importance of making informed decisions,
-          especially when it comes to purchasing a vehicle. Our commitment to
-          transparency, accuracy, and customer satisfaction drives everything we
-          do.
+          At Vin Me Now, we understand that it is important to double-check
+          every detail about a vehicle for your peace of mind. It is very
+          crucial to make well-informed decisions, especially when purchasing a
+          vehicle. Our focus on transparency, accuracy, and customer
+          satisfaction is at the heart of everything we do. We’re here to
+          support you every step of the way with reliable data and dedicated
+          assistance.
+          <br />
+          Count on Vin Me Now as your trusted partner in making smarter, safer
+          vehicle choices. Whether you’re buying, selling, or simply verifying
+          details, we are here for you.
         </p>
 
         <h2 className="about-subheading">Payment Terms and Conditions</h2>
         <p className="about-paragraph">
-          By purchasing a detailed vehicle history report from VIN ME NOW, you
+          By purchasing a detailed vehicle history report from Vin Me Now, you
           agree to the following payment terms and conditions:
         </p>
 
         <h2 className="about-subheading">Payment Processing</h2>
         <p className="about-paragraph">
-          All payments for vehicle history reports are processed securely
-          through our payment gateway. Upon successful payment, you will receive
-          an email containing your detailed report promptly.
+          All payments for vehicle history reports are handled securely through
+          our trusted payment gateway. Once the payment is successfully
+          processed, your detailed report will be sent to your email within the
+          specified timeframe.
+          <br />
+          On your card or bank statement, the transaction will be listed as AYS
+          Technologies. Please keep this in mind when reviewing your payment
+          history.
+        </p>
+
+        <h2 className="about-subheading">Charges</h2>
+        <p className="about-paragraph">
+          You are only charged for the detailed vehicle history report based on
+          the VIN number you provide. The fee is final and includes the full
+          cost of data retrieval and presentation services offered by Vin Me
+          Now.
         </p>
 
         <h2 className="about-subheading">No Refund Policy</h2>
         <p className="about-paragraph">
-          By completing your purchase, you acknowledge and agree that all sales
-          are final. Given the nature of our service, you are not entitled to
-          request any refunds, chargebacks, or reversals after receiving your
-          report.
+          By completing your purchase, you acknowledge and accept that all sales
+          are final. Due to the nature of our service, refunds, chargebacks, or
+          payment reversals are not permitted after the report is delivered.
+          <br />
+          We are committed to providing accurate and comprehensive vehicle
+          history reports. Once the report has been sent, the service is deemed
+          fully rendered. Any attempts to request refunds or initiate
+          chargebacks will be treated as a breach of these terms and conditions.
         </p>
 
         <h2 className="about-subheading">Acceptance of Terms</h2>
         <p className="about-paragraph">
-          By proceeding with the payment, you confirm that you have read,
-          understood, and agreed to these payment terms and conditions. Your use
-          of VIN ME NOW's services constitutes your binding agreement to these
-          terms.
+          By completing the payment, you confirm that you have read, understood,
+          and accepted these payment terms and conditions. Using Vin Me Now’s
+          services signifies your binding agreement to these terms, and you
+          waive any right to dispute or contest these conditions once your
+          report has been delivered.
+        </p>
+
+        <h2 className="about-subheading">Delivery of Service</h2>
+        <p className="about-paragraph">
+          Vin Me Now is dedicated towards delivering your vehicle history report
+          to the email address you provide us at purchase. Please ensure the
+          email address you enter is correct and able to receive our emails, as
+          we are not responsible for failed deliveries due to incorrect or
+          invalid addresses.
         </p>
 
         <h2 className="about-subheading">Dispute Resolution</h2>
         <p className="about-paragraph">
-          In the unlikely event of any dispute arising from your purchase, you
-          agree to contact VIN ME NOW directly for resolution before pursuing
-          any external claims. Our team is here to assist with any concerns, but
-          please be reminded that refunds or cancellations are not available for
-          completed services.
+          If any disputes arise regarding your purchase, you agree to first
+          reach out to Vin Me Now for resolution before seeking external claims.
+          Our team is ready to help with any problems; however, please note that
+          refunds or cancellations are not offered once the service has been
+          completed.
         </p>
       </div>
     </div>

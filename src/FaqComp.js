@@ -21,50 +21,43 @@ const FaqComp = () => {
       <div className="accordion-container mt-20">
         <AccordionItem
           index={1}
-          title="What Can You Learn From a Vehicle History Report?"
-          content="Vehicle history reports reveal key information such as accidents, title issues, and odometer readings."
+          title="How can a VIN history report help buyers?"
+          content="A VIN history report provides detailed insights into a vehicle’s past, such as accidents, title issues, and maintenance history, helping buyers make informed decisions."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={2}
-          title="What information is included in a car history report?"
-          content="It typically includes accident history, title status, odometer readings, and service records."
+          title="How does a VIN history report help with financing or insurance?"
+          content="Lenders and insurers may request a Vehicle History Report to assess risks and determine eligibility for financing or coverage based on the vehicle’s history."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={3}
-          title="Is there a cheaper alternative to Carfax?"
-          content="Yes, several other services provide similar reports at a lower cost, such as AutoCheck and VINCheckPro."
+          title="Can I use a Vehicle History Report to check for active recalls?"
+          content="Yes, the report lists any unresolved safety recalls, so the vehicle can be repaired by the manufacturer before purchase or use."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={4}
-          title="Can I change my VIN number?"
-          content="No, changing a VIN number is illegal unless authorized by a government agency."
+          title="How often should I pull a VIN history report?"
+          content="We recommend pulling a Vehicle History Report every time you buy, sell, or finance a used vehicle to verify its condition and ownership."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={5}
-          title="Are VIN and chassis numbers the same?"
-          content="VIN and chassis numbers are not the same. The chassis number is part of the VIN and provides vehicle-specific information."
+          title="Is it safe to share my VIN when selling a car?"
+          content="Yes, providing the VIN is necessary for buyers to verify the vehicle’s history. It ensures transparency and helps build trust with potential buyers."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={6}
-          title="Which vehicle history report is the best?"
-          content="Carfax is considered the most comprehensive, but AutoCheck offers similar quality at a lower price."
-          activeIndex={activeIndex}
-          toggleAccordion={toggleAccordion}
-        />
-        <AccordionItem
-          index={7}
-          title="How to get a free vehicle history report?"
-          content="Some services, like VINCheck and the National Insurance Crime Bureau (NICB), provide free basic reports."
+          title="Can I check Vehicle History Reports for vehicles outside the US?"
+          content="Yes, some Vehicle History Reports cover vehicles registered in Canada, Europe, and other regions, depending on the report provider."
           activeIndex={activeIndex}
           toggleAccordion={toggleAccordion}
         />
