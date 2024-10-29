@@ -20,7 +20,7 @@ const ContactUs = () => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [showAlert, setShowAlert] = useState(false); // State to manage alert visibility
+  const [showAlert, setShowAlert] = useState(false);
   let { pathname } = useLocation();
 
   useEffect(() => {

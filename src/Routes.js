@@ -6,6 +6,7 @@ import VinSearch from "./vinsearch/VinSearch";
 import PersonalInfo from "./PersonalInfo";
 import Terms from "./term/Terms";
 import Refund from "./term/Refund";
+import Privacyy from "./aboutus/Privacyy";
 
 import Footer from "./footer/Footer";
 
@@ -26,6 +27,7 @@ const AppRoutes = () => {
         <Route path="/personal-info" element={<PersonalInfo />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/refund" element={<Refund />} />
+        <Route path="/privacyy" element={<Privacyy />} />
       </Routes>
 
       <Footer />
