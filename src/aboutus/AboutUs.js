@@ -105,6 +105,60 @@ const AboutUs = () => {
           vehicle choices. Whether you’re buying, selling, or simply verifying
           details, we are here for you.
         </p>
+
+        <h3 className="about-subheading">Payment Processing</h3>
+        <p className="about-paragraph">
+          All payments for vehicle history reports are handled securely through
+          our trusted payment gateway. Once the payment is successfully
+          processed, your detailed report will be sent to your email within the
+          specified timeframe.
+          <br />
+          On your card or bank statement, the transaction will be listed as AYS
+          Technologies. Please keep this in mind when reviewing your payment
+          history.
+        </p>
+        <h3 className="about-subheading">Charges</h3>
+        <p className="about-paragraph">
+          You are only charged for the detailed vehicle history report based on
+          the VIN number you provide. The fee is final and includes the full
+          cost of data retrieval and presentation services offered by Vin Me
+          Now.
+        </p>
+        <h3 className="about-subheading">No Refund Policy</h3>
+        <p className="about-paragraph">
+          By completing your purchase, you acknowledge and accept that all sales
+          are final. Due to the nature of our service, refunds, chargebacks, or
+          payment reversals are not permitted after the report is delivered.
+          <br />
+          We are committed to providing accurate and comprehensive vehicle
+          history reports. Once the report has been sent, the service is deemed
+          fully rendered. Any attempts to request refunds or initiate
+          chargebacks will be treated as a breach of these terms and conditions.
+        </p>
+        <h3 className="about-subheading">Acceptance of Terms</h3>
+        <p className="about-paragraph">
+          By completing the payment, you confirm that you have read, understood,
+          and accepted these payment terms and conditions. Using Vin Me Now’s
+          services signifies your binding agreement to these terms, and you
+          waive any right to dispute or contest these conditions once your
+          report has been delivered.
+        </p>
+        <h3 className="about-subheading">Delivery of Service</h3>
+        <p className="about-paragraph">
+          Vin Me Now is dedicated towards delivering your vehicle history report
+          to the email address you provide us at purchase. Please ensure the
+          email address you enter is correct and able to receive our emails, as
+          we are not responsible for failed deliveries due to incorrect or
+          invalid addresses
+        </p>
+        <h3 className="about-subheading">Dispute Resolution</h3>
+        <p className="about-paragraph">
+          If any disputes arise regarding your purchase, you agree to first
+          reach out to Vin Me Now for resolution before seeking external claims.
+          Our team is ready to help with any problems; however, please note that
+          refunds or cancellations are not offered once the service has been
+          completed.
+        </p>
       </div>
     </div>
   );

@@ -66,6 +66,10 @@ const Refund = () => {
           <li>Vehicle VIN Number</li>
           <li>Reason for Refund Request</li>
           <li>Your First Name</li>
+          <li>Your Last Name</li>
+          <li>Date of Purchase</li>
+          <li>Payment Method</li>
+          <li>PayPal Invoice NO #</li>
         </ul>
       </div>
     </div>
