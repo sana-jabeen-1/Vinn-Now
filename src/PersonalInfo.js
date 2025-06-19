@@ -16,7 +16,7 @@ const PersonalInfo = () => {
   const [showPayPal, setShowPayPal] = useState(false); // State to manage PayPal button visibility
 
   // PayPal client ID (replace with your sandbox client ID)
-  const CLIENT_ID = 'ARWnknX-IC4v6slUqzVnaOEpik70jBrYnHHvU2ego4mJjmL9NFgIt099xjCR7KUQoEWHyANWQ4b9seR9';
+  const CLIENT_ID = 'ARxbxvm8ORE3KhXg9IXdslJOzw_qpFzY8Gj34Cf1--G0y3z_vqTFDRvkjzGBh49pwCfgj3u5k_2a10kK';
 
   // Handle successful payment
   const handleApprove = (orderID) => {
@@ -156,7 +156,7 @@ const PersonalInfo = () => {
                         purchase_units: [
                           {
                             description: 'VIN Report Purchase',
-                            amount: { value: '35.00' },
+                            amount: { value: '1.00' },
                           },
                         ],
                       });
