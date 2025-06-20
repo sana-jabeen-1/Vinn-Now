@@ -156,7 +156,7 @@ const PersonalInfo = () => {
                         purchase_units: [
                           {
                             description: 'VIN Report Purchase',
-                            amount: { value: '1.00' },
+                            amount: { value: '35.00' },
                           },
                         ],
                       });
